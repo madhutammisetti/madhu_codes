@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/newimage.png);
+    background-image: url("newimage.png");
     background-size: cover;
     background-position: top 45% right 10%;
 }
@@ -476,7 +476,7 @@ nav .bi{
 
 @media (min-width: 320px) and (max-width: 480px){
     #header{
-        background-image: url(/final2.png);
+        background-image: url("final2.png");
     }
     .header-text{
         margin-top: 40%;
@@ -551,7 +551,7 @@ nav .bi{
  @media (min-width: 481px) and (max-width: 767px) {
 
     #header{
-        background-image: url(/final2.png);
+        background-image: url("final2.png");
     }
     .header-text{
         margin-top: 60%;
