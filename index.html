@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhu Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+    <body>
+        <!-- This id header  is an landing page start here -->
+        <div id="header">
+            <!-- this class container is an navbar    -->
+            <div class="container">
+                <nav>
+                    <img src="images/Logo2.png" alt="logoname" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="bi bi-x-circle-fill" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="bi bi-list" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Madhu Tammisetti</span></h1>
+                </div>
+            </div>
+        </div>
+        <!-- This id header  is an landing page end here -->
+        <!-- This id about  is an about page start here -->
+        <div id="about">    
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/hero-img-min.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="about-para">I'm a Web Developer & Programmer Living in Andhra Pradesh,India. I make Web Applications usually with 
+                            Front-end tools Html, Css, JavaScript and React and Backend tools NodeJs, Mangodb, ExpressJs. At Present I'm working as an 
+                            Security Engineer in Capgemini, So I also have knowledge in CyberSecurity field and provide security for web applications along with
+                            developing web applications. I also have prior knowledge on Email Marketing , Social Media Marketing...</p>
+                        <div class="tab-titles">
+                            <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                            <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                            <div class="tab-links" onclick="opentab('education')">Education</div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>J</span>ava Script</li>
+                                <li><span>R</span>eact</li>
+                                <li><span>H</span>tml</li>
+                                <li><span>C</span>ss</li>
+                                <li><span>B</span>urp Suite</li>
+                                <li><span>P</span>ython</li>
+                                <li><span>N</span>odeJs</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021-present</span><br>Working as Security Engineer In Capgemini</li>
+                                <li><span>2020-2021</span><br>Web developer in my startup, worked on both FrontEnd and BackEnd</li>
+                                <li><span>2019-2020</span><br>Digital Marketing Executive at RK Technology</li>
+                                <li><span>In between</span><br>I have done logo Designing ,Social Media Marketing</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Full Stack MERN Developer Training from EDYODA</li>
+                                <li><span>2020</span><br>Bachalors Degree in ECE from RVR&JC ,Guntur</li>
+                                <li><span>2017</span><br>Diploma in Electronics and Communication Engineering From SVEC</li>
+                                <li><span>In between</span><br>I have trained on Python, JavaScript, React, Mongodb , NodeJs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------- The about page end here -------------------------------------------------->
+            <!--------------------------------------- The Services page start here -------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skill Stack</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>Web Development</h2>
+                    <p>I'm Full stack Web Developer and Web Designer,I love working on new and exciting technologies emerging nowadays. I have Good 
+                        working experience as a FrontEnd Developer. I love designs and it's the first step before creating any website as I can give layout to my imagination.
+                    </p>
+                    <a href="#">Learn More</a>     
+                </div>
+                <div>
+                    <i class="bi bi-envelope-fill"></i>
+                    <h2>Email Marketing</h2>
+                    <p>Email Marketing is the great way to promote any kind of business. I have working experience as Digital Marketing Executive in RK technologies
+                      also get more clients for my business client and Increased the sales for my client business.. </p>
+                    <a href="#">Learn More</a>     
+                </div>
+                <div>
+                    <i class="bi bi-shield-lock-fill"></i>
+                    <h2>Cyber Security</h2>
+                    <p>Very Web application needs security,I am working as an penetration Tester in Capgemini and tested for different types vulnerabilities
+                        and prepared report with mitigations and provide security for web applications. </p>
+                    <a href="#">Learn More</a>     
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-pencil-square"></i>
+                    <h2>Logo Design</h2>
+                    <p>I have Interest in designing field like LOGO Design for business and Thumbnail Design and Social media posts designs. I have great knowledge 
+                        on canva tool in which I have created different logos and Thumbnails for youtube videos . </p>
+                    <a href="#">Learn More</a>     
+                </div>
+                <div>
+                    <i class="bi bi-ui-checks"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I dont have knowledge on UI/UX design but I have interest to learn User Interface design , also interest 
+                        to learn UI design tools like Figma, adobe, flowmap,etc.. I will create different user interfaces design for web development and app development.
+                    </p>
+                    <a href="#">Learn More</a>     
+                </div>
+                <div>
+                    <i class="bi bi-instagram"></i>
+                    <h2>Social Media Marketing</h2>
+                    <p>To reach right people you need the right tools,from organic posts and target ads can get the more clients. I'm working on social media marketing because
+                    everyone seems to be on social media these days.
+                    </p>
+                    <a href="#">Learn More</a>     
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------- The Services page end here -------------------------------------------------->
+    <!--------------------------------------- The Projects page start here -------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Kafene Web Application</h3>
+                        <p>This web app consists of userdata , no of orders that user orederd and the products that are avaliable.</p>
+                        <a href="https://github.com/madhutammisetti/Kafene_Project" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png"> 
+                    <div class="layer">
+                        <h3>Vegan Store</h3>
+                        <p>This web app consists of userdata , no of orders that user orederd and the products that are avaliable.</p>
+                        <a href="https://github.com/madhutammisetti/Vegan_store_website" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png"> 
+                    <div class="layer">
+                        <h3>Online Shooping</h3>
+                        <p>This web app consists of userdata , no of orders that user orederd and the products that are avaliable.</p>
+                        <a href="https://github.com/madhutammisetti/E-Commerce-Website" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div> 
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--------------------------------------- The Projects page start here -------------------------------------------------->
+    <!----------------------------------------- Contact Form start here -------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-send-fill"></i>madhu071436@gmail.com</p>
+                    <p><i class="bi bi-telephone"></i>+919948153014</p>
+                    <div class="social-icons">
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    <a href="images/new resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input id="name" type="text" name="Name" placeholder="Your Name" required>
+                        <input id="email" type="email" name="Email" placeholder="Your Email" required>
+                        <input id="phone" type="phone" name="phone" placeholder="Your Phone Number" required>
+                        <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------------------------------------copyright ------------------------------------------------------------->
+        <div class="copyright">
+            <p>Copyright <i class="bi bi-c-circle"></i> Madhu by WECLUS 2022</p>
+        </div>
+    </div>
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>    
+</html>
